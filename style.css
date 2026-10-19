@@ -1123,3 +1123,28 @@ a:focus-visible {
         animation-duration: 0.01ms !important;
     }
 }
+
+
+/* ========================================
+   BASIC CONTENT PROTECTION
+======================================== */
+
+/* Prevent selecting and highlighting text */
+body {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Allow selecting text inside form controls if added later */
+input,
+textarea {
+    -webkit-user-select: text;
+    user-select: text;
+}
+
+/* Prevent dragging images */
+img {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
